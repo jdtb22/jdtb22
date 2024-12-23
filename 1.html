@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Navidad Monita</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #ff7eb3, #ffc3a0);
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0 0 20px;
+            color: #ffecb3;
+        }
+        .button {
+            display: inline-block;
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 20px rgba(255, 111, 97, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FELIZ NAVIDAD MONITA</h1>
+        <button class="button" onclick="reclamarRegalo()">Reclama Tu Regalo</button>
+        <p id="mensaje" style="margin-top: 20px; font-size: 1.5em; color: #ffecb3;"></p>
+    </div>
+
+    <script>
+        function reclamarRegalo() {
+            const mensaje = document.getElementById('mensaje');
+            mensaje.textContent = 'Regalo reclamado: Obtuviste un Bono del Miniso para cualquier peluche ❤️';
+        }
+    </script>
+</body>
+</html>
